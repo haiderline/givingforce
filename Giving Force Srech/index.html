@@ -9,17 +9,308 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Century Gothic:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,400&display=swap">
-  <link href="index.css" rel="stylesheet"/>
+  <!-- <link href="index.css" rel="stylesheet"/> -->
+  <style>
+    body {
+    font-family: 'Montserrat', 'Century Gothic', 'Raleway';
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Century Gothic', sans-serif;
+  }
+
+  p {
+    font-family: 'Century Gothic', 'Raleway', sans-serif;
+  }
+ /* Navbar Styles */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  color: #000000;
+}
+
+.navbar .logo {
+  float: left;
+}
+
+.navbar .button {
+  float: right;
+}
+
+  /* Background Image Styles */
+.background-image {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.background-image .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 70%;
+}
+
+.overlay h1 {
+  font-size: 64px;
+}
+
+.overlay h3 {
+  font-size: 36px;
+}
+
+ /* CSS for image placement */
+ .container-fluid {
+  position: relative;
+}
+.section-2 {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+.section-2 h1 {
+  color: #F16622;
+  font-size: 48px;
+}
+.section-2 p {
+  color: black;
+}
+.section-2 .width-para {
+  width: 70%;
+}
+.section-2 .pt-5 {
+  font-family: 'Raleway';
+  font-style: italic;
+}
+.section-2 .section-2-overaly {
+  position: absolute;
+}
+.section-2 .section-2-overaly p {
+  position: relative;
+  left: 15%;
+}
+.section-2 .section-2-overaly .pt-5 {
+  width: 70%;
+}
+ /* CSS for section-3 */
+.section-3 {
+  text-align: center;
+  margin-bottom: 80px;
+} 
+.section-3 h1, h5, h6 {
+  font-weight: bold;
+  color: #F16622;
+}
+.section-3 h1 {
+  font-size: 48px;
+  padding-bottom: 10px;
+}
+.section-3 .bg-badge {
+  background-color: #F16622;
+  color: white;
+}
+
+.section-4 {
+  color:#ffffff;
+}
+  /* CSS for border box grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .border-box {
+    border: 5px solid rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 20px;
+  }
+/* CSS for section-5 */
+.section-5 {
+  background-image: url('/section-5-bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+.section-5 h1 {
+  color: #F16622;
+  font-size: 48px;
+}
+.section-5 p {
+  color: black;
+}
+.section-5 .width-para {
+  width: 70%;
+}
+/* CSS for section-6 */
+.section-6 {
+  text-align: center;
+}
+
+.section-6 h1 {
+  margin-bottom: 20px;
+  color: #F16622;
+  font-size: 48px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center
+}
+.grid-container .logo8 {
+  grid-column: 2 / 3;
+}
+.grid-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* CSS for footer */
+footer {
+  background-color: #F16622;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+/* CSS for responsive layout */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .overlay h1 {
+    font-size: 32px;
+  }
+  .overlay h3 {
+    font-size: 24px;
+  }
+  .section-2 h1 {
+    font-size: 36px;
+  }
+  .section-2 .width-para {
+    width: 90%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 36px;
+  }
+  .overlay h3 {
+    font-size: 28px;
+  }
+  .section-2 h1 {
+    font-size: 42px;
+  }
+  .section-2 .width-para {
+    width: 80%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: none;
+  }
+  .background-image .overlay {
+    position: relative;
+    color:#000000;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .overlay h1 {
+    font-size: 48px;
+  }
+  .overlay h3 {
+    font-size: 36px;
+  }
+  .section-2 h1 {
+    font-size: 48px;
+  }
+  .section-2 .width-para {
+    width: 70%;
+  }
+  .section-2 img {
+    display: none;
+  }
+  .section-2 .section-2-overaly {
+    position: relative;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .overlay h1 {
+    font-size: 64px;
+  }
+  .overlay h3 {
+    font-size: 48px;
+  }
+  .section-2 h1 {
+    font-size: 48px;
+  }
+  .section-2 .width-para {
+    width: 60%;
+  }
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .overlay h1 {
+    font-size: 72px;
+  }
+  .overlay h3 {
+    font-size: 54px;
+  }
+  .section-2 h1 {
+    font-size: 54px;
+  }
+  .section-2 .width-para {
+    width: 70%;
+  }
+}
+  </style>
 </head>
 <body>
     <div class="navbar">
         <a class="navbar-brand" href="#">
-        <img src="./images/logo2.png" alt="" width="250" height="50" class="d-inline-block align-text-top"></a>
+        <img src="/logo2.png" alt="" width="250" height="50" class="d-inline-block align-text-top"></a>
         <button type="button" class="btn btn-lg" style="background-color: #F16622; color:#ffffff;">Register Now</button>
     </div>
   
     <div class="background-image">
-      <img src="./images/bgdrop2.png" class="w-100 img-fluid" alt="bgdrop">
+      <img src="/bgdrop2.png" class="w-100 img-fluid" alt="bgdrop">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -36,7 +327,7 @@
     <!-- section 2  -->
       <div class="container-fluid">
         <div class="section-2">
-          <img src="./images/section-2-bg.png" alt="section background" class="img-fluid w-100">
+          <img src="/section-2-bg.png" alt="section background" class="img-fluid w-100">
           <div class="section-2-overaly">          
           <h1 class="fw-bold">Purpose Of The Session</h1>
           <p class="width-para">The business context for ESG impacts is evolving rapidly and challenging corporate executives to translate global megatrends such as climate change, resource scarcity, and population growth into tangible risks and opportunities for their business to manage. ESG impacts are generally longer-term in nature, and in many cases, beyond the direct control of a company. This makes the linkage of ESG impacts to business value even more challenging.</p>
@@ -130,13 +421,13 @@
         <div class="section-6">
           <h1 class="fw-bold">Sponsored BY</h1>
           <div class="grid-container">
-            <img src="./images/logo2.png" alt="Logo 1">
-            <img src="./images/logo3.png" alt="Logo 2">
-            <img src="./images/logo4.png" alt="Logo 3">
-            <img src="./images/logo5.png" alt="Logo 4">
-            <img src="./images/logo6.png" alt="Logo 5">
-            <img src="./images/logo7.png" alt="Logo 6">
-            <img src="./images/logo8.png" alt="Logo 7" class="logo8">
+            <img src="/logo2.png" alt="Logo 1">
+            <img src="/logo3.png" alt="Logo 2">
+            <img src="/logo4.png" alt="Logo 3">
+            <img src="/logo5.png" alt="Logo 4">
+            <img src="/logo6.png" alt="Logo 5">
+            <img src="/logo7.png" alt="Logo 6">
+            <img src="/logo8.png" alt="Logo 7" class="logo8">
           </div>
         </div>
         </div>
